@@ -1,5 +1,6 @@
 require 'bundler/setup'
-require 'github_api'
+require 'octokit'
+require 'hashie'
 require 'awesome_print'
 require 'pp'
 require 'pry-byebug'

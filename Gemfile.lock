@@ -158,8 +158,9 @@ DEPENDENCIES
   hashie
   ministryofjustice-danger
   mutant-rspec
+  octokit
   pry-byebug
   rspec
 
 BUNDLED WITH
-   1.14.3
+   1.15.3

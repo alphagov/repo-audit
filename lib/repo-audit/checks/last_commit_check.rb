@@ -5,12 +5,12 @@ module RepoAudit
 
       def run(repo)
         commit = RepositoryHelper.last_commit(user: repo.owner.login, name: repo.name)
-        author = commit.fetch("commit").fetch("author")
+        author = commit[:commit][:author]
         result(
-          timestamp: DateTime.parse(author.fetch("date")),
+          timestamp: author[:date],
           author: {
-            name: author.fetch("name"),
-            email: author.fetch("email")
+            name: author[:name],
+            email: author[:email]
           }
         )
       end

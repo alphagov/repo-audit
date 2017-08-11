@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'github_api'
+gem 'octokit'
 gem 'hashie'
 
 group :development do
